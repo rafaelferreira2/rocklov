@@ -17,7 +17,8 @@ After do
     #     type: Allure::ContentType::PNG,
     #     source: File.open(tempShot)
     # )
-  screenshot = File.open(tempShot)
+  # screenshot = File.open(tempShot, "rb")
+
+  screenshot = File.open(File.join(tempShot), "rb")
   attach(screenshot, 'image/png')
- 
 end

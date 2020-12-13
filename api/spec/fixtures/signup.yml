@@ -1,0 +1,40 @@
+---
+- title: Nome em branco
+  payload:
+    name: ''
+    email: joao@bol.com
+    password: teste123
+  code: 412
+  error: required name
+- title: Sem o campo nome
+  payload:
+    email: joao@bol.com
+    password: teste123
+  code: 412
+  error: required name
+- title: Email em branco
+  payload:
+    name: teste nome
+    email: ''
+    password: teste123
+  code: 412
+  error: required email
+- title: Sem o campo email
+  payload:
+    name: teste nome
+    password: teste123
+  code: 412
+  error: required email
+- title: Senha em branco
+  payload:
+    name: teste nome
+    email: joao@bol.com
+    password: ''
+  code: 412
+  error: required password
+- title: Sem o campo senha
+  payload:
+    name: teste nome
+    email: joao@bol.com
+  code: 412
+  error: required password
