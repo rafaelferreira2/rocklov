@@ -5,8 +5,8 @@ Before do
     @dash_page = DashPage.new
     @equipos_page = EquiposPage.new
 
-    page.current_window.resize_to(1366, 768)
-
+    page.current_window.resize_to(1366, 1080)
+    # page.driver.browser.manage.window.maximize
 end
 
 After do

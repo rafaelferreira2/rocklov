@@ -20,7 +20,6 @@ Funcionalidade: Cadastro de anúncios
         Quando submeto o cadastro desse item
         Então devo ver esse item no meu Dashboard
 
-    @temp
     Esquema do Cenario: Tentativa de cadastro de anúncios
 
         Dado que acesso o formulário de cadastro de anúncios
