@@ -2,3 +2,5 @@ Gemfile.lock
 logs/*.html
 logs/*.xml
 logs/*.log
+logs/*.json
+logs/*.png
