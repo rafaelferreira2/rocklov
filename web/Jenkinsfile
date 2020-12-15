@@ -9,12 +9,12 @@ pipeline {
     stages {
         stage('Build') {
             steps{
-                sh 'cd api && bundle install'
+                sh 'cd web && bundle install'
             }
         }
         stage('Testing') {
             steps {
-                sh 'cd api && rspec'
+                sh 'cd web && rake test'
             }
         }
         stage('UAT') {
@@ -25,13 +25,13 @@ pipeline {
         }
         stage('prod') {
             steps {
-                echo 'API pronta para produção.'
+                echo 'WebApp para produção.'
             }
         }
     }
     post {
         always {
-            junit 'api/logs/report.xml'
+            echo 'TODO'
         }
     }
 }
