@@ -10,7 +10,7 @@ pipeline {
             steps{
                 sh 'bundle install'
             }
-        })
+        }
         stage('Testing') {
             steps {
                 echo 'Hello World'
