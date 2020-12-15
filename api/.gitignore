@@ -1,5 +1,4 @@
-
 Gemfile.lock
-logs/report.html
-logs/report.xml
-logs/mongo.log
+logs/*.html
+logs/*.xml
+logs/*.log
